@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "source": {
+    "name": "customers.csv",
+    "sha256": "ecfebf51adbb08ed7c0677d9ec375b575037f61e6db38fe96202e4bfe8d77b97",
+    "bytes": 665,
+    "encoding": "utf-8-sig",
+    "delimiter": ","
+  },
+  "config_sha256": "6fb8102db4732a783b699a26206c603c70c06e6a922377bd658f2a017824bf1f",
+  "configuration": {
+    "delimiter": ",",
+    "trim_columns": [
+      "customer_id",
+      "name",
+      "email",
+      "joined_date",
+      "notes"
+    ],
+    "case_columns": {
+      "email": "lower"
+    },
+    "required_columns": [
+      "customer_id",
+      "name"
+    ],
+    "date_columns": {
+      "joined_date": [
+        "%Y-%m-%d"
+      ]
+    },
+    "key_columns": [
+      "customer_id"
+    ],
+    "excel_safe": true
+  },
+  "input_rows": 9,
+  "columns": [
+    "customer_id",
+    "name",
+    "email",
+    "joined_date",
+    "notes"
+  ],
+  "clean_rows": 3,
+  "review_rows": 5,
+  "duplicates_rows": 1,
+  "reconciliation": {
+    "input_rows": 9,
+    "partition_rows": 9,
+    "balanced": true,
+    "verified_output_rows": 9,
+    "cells_round_trip_verified": true
+  },
+  "changed_cells": 5,
+  "change_events": 6,
+  "conflicting_key_groups": 1,
+  "formula_risk_cells": [
+    {
+      "source_row": 7,
+      "column": "notes"
+    }
+  ],
+  "formula_risk_headers": [],
+  "audit_metadata_prefix": "__audit_",
+  "excel_safe_copies": true,
+  "notes": [
+    "All source records appear exactly once across clean, review and duplicates.",
+    "Exact duplicates take precedence over review; their issues remain recorded and duplicate_of points to the first source row.",
+    "Canonical CSV values are strings; date validation does not rewrite dates."
+  ],
+  "output_rows": {
+    "clean.csv": 3,
+    "review.csv": 5,
+    "duplicates.csv": 1,
+    "changes.csv": 6,
+    "row-audit.csv": 9,
+    "excel-safe/clean.csv": 3,
+    "excel-safe/review.csv": 5,
+    "excel-safe/duplicates.csv": 1,
+    "excel-safe/changes.csv": 6,
+    "excel-safe/row-audit.csv": 9
+  },
+  "output_sha256": {
+    "changes.csv": "477ba317d81d289b3ea738727ebc3301bf56ec2efa7191467fd00d83e1655287",
+    "clean.csv": "83143985e31d57a66de4f514332b35337bcc5bd0c781c82b581ec9b21037d4db",
+    "duplicates.csv": "6c45fd4be25bf580f3c6c8415a26d0a083eef2e85be7fbba928d0fcace5a9195",
+    "excel-safe/changes.csv": "477ba317d81d289b3ea738727ebc3301bf56ec2efa7191467fd00d83e1655287",
+    "excel-safe/clean.csv": "83143985e31d57a66de4f514332b35337bcc5bd0c781c82b581ec9b21037d4db",
+    "excel-safe/duplicates.csv": "6c45fd4be25bf580f3c6c8415a26d0a083eef2e85be7fbba928d0fcace5a9195",
+    "excel-safe/review.csv": "f6a481605e97f4acd6fa47e1e6a07a3e9a2453ff3b80b04d189e39a1a922a41c",
+    "excel-safe/row-audit.csv": "75ab3dc5f810e37df8757db3bd63f0474d19523c601f173bcf4a0f90b6cd64aa",
+    "review.csv": "825b73a679dcc5520bf91799796fa99b12ae2f229fbbdb2c1c92c252898f9976",
+    "row-audit.csv": "75ab3dc5f810e37df8757db3bd63f0474d19523c601f173bcf4a0f90b6cd64aa"
+  }
+}

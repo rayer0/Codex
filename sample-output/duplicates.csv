@@ -1,0 +1,2 @@
+﻿__audit_source_row,__audit_source_line,__audit_issues,__audit_duplicate_of,customer_id,name,email,joined_date,notes
+2,3,,1,00001,Ada Example,ada@example.test,2026-01-02,"Synthetic record, not a real customer"

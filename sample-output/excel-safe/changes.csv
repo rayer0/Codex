@@ -1,0 +1,7 @@
+﻿source_row,source_line,column,original,new,rule
+1,2,name, Ada Example ,Ada Example,trim_outer_whitespace
+1,2,email, ADA@EXAMPLE.TEST ,ADA@EXAMPLE.TEST,trim_outer_whitespace
+1,2,email,ADA@EXAMPLE.TEST,ada@example.test,lower
+9,11,name, Gia Example ,Gia Example,trim_outer_whitespace
+9,11,notes,  Explicitly trimmed  ,Explicitly trimmed,trim_outer_whitespace
+9,11,email,GIA@EXAMPLE.TEST,gia@example.test,lower

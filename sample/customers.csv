@@ -1,0 +1,11 @@
+customer_id,name,email,joined_date,notes
+00001, Ada Example , ADA@EXAMPLE.TEST ,2026-01-02,"Synthetic record, not a real customer"
+00001,Ada Example,ada@example.test,2026-01-02,"Synthetic record, not a real customer"
+00002,Ben Example,ben@example.test,2026-02-30,Impossible date
+00003,Cam Example,cam@example.test,2026-03-01,First value
+00003,Cam Example,cam@example.test,2026-03-01,Conflicting value
+00004,,dee@example.test,2026-04-01,Missing required name
+00005,Eli Example,eli@example.test,2026-05-01,=1+1
+00006,Fay Example,fay@example.test,2026-06-01,"Synthetic multiline note
+second line"
+00007, Gia Example ,GIA@EXAMPLE.TEST,2026-07-01,  Explicitly trimmed  

@@ -1,0 +1,5 @@
+﻿customer_id,name,email,joined_date,notes
+00001,Ada Example,ada@example.test,2026-01-02,"Synthetic record, not a real customer"
+00006,Fay Example,fay@example.test,2026-06-01,"Synthetic multiline note
+second line"
+00007,Gia Example,gia@example.test,2026-07-01,Explicitly trimmed

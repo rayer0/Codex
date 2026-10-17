@@ -1,0 +1,6 @@
+﻿__audit_source_row,__audit_source_line,__audit_issues,__audit_duplicate_of,customer_id,name,email,joined_date,notes
+3,4,invalid_date:joined_date,,00002,Ben Example,ben@example.test,2026-02-30,Impossible date
+4,5,conflicting_key:customer_id,,00003,Cam Example,cam@example.test,2026-03-01,First value
+5,6,conflicting_key:customer_id,,00003,Cam Example,cam@example.test,2026-03-01,Conflicting value
+6,7,missing_required:name,,00004,,dee@example.test,2026-04-01,Missing required name
+7,8,formula_risk:notes,,00005,Eli Example,eli@example.test,2026-05-01,=1+1

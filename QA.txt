@@ -1,0 +1,30 @@
+Local validation, October 16, 2026 (America/Los_Angeles)
+
+Runtime: Python 3.9.6 standard library, Apple M2 / 16 GB.
+Unit checks: 11 passed. Covers quoted multiline cells including bare CR,
+leading-zero IDs, declared normalization, duplicate separation, conflicting
+keys, required values, explicit/ambiguous dates, CSV parser errors, limits,
+existing-output preservation, metadata collisions, spreadsheet companion
+copies, configuration-byte snapshots and output digests.
+
+Independent scale acceptance:
+50,000 input records, 20 columns, 10,312,564 source bytes.
+48,697 clean + 804 review + 499 duplicate records = 50,000.
+100,000 individual rule-change events.
+All 50,000 records mapped to delivered records and compared with expected
+normalized values. Reversing the change log reconstructed every original
+cell exactly, including leading zeros and CR/LF inside quoted fields.
+All 10 delivered CSV files reparsed; their SHA-256 hashes matched the summary.
+A 50,001-record input was rejected without publishing a result directory.
+Cleanup took 9.039 seconds on this local synthetic case; this is not a
+general performance guarantee.
+
+Included small example: 9 input = 3 clean + 5 review + 1 duplicate.
+All example data is invented. No customer data, external upload, order,
+payment, commercial acceptance or earnings is established by these tests.
+
+Known boundaries: explicit trim/case changes and date validation only;
+exact full-row deduplication always keeps the first occurrence. Cell values
+remain strings in CSV, but spreadsheet applications may infer their own
+types on import. Formula-like fields are conservatively flagged; companion
+copies are not a guarantee against every spreadsheet interpretation.

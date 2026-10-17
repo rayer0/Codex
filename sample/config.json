@@ -1,0 +1,9 @@
+{
+  "delimiter": ",",
+  "trim_columns": ["customer_id", "name", "email", "joined_date", "notes"],
+  "case_columns": {"email": "lower"},
+  "required_columns": ["customer_id", "name"],
+  "date_columns": {"joined_date": ["%Y-%m-%d"]},
+  "key_columns": ["customer_id"],
+  "excel_safe": true
+}

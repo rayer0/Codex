@@ -1,0 +1,10 @@
+﻿source_row,source_line,source_line_end,output_file,output_row,duplicate_of,issues
+1,2,2,clean.csv,2,,
+2,3,3,duplicates.csv,2,1,
+3,4,4,review.csv,2,,invalid_date:joined_date
+4,5,5,review.csv,3,,conflicting_key:customer_id
+5,6,6,review.csv,4,,conflicting_key:customer_id
+6,7,7,review.csv,5,,missing_required:name
+7,8,8,review.csv,6,,formula_risk:notes
+8,9,10,clean.csv,3,,
+9,11,11,clean.csv,4,,
