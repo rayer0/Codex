@@ -2,9 +2,13 @@
 
 Original Python 3 CLI; standard library only. No network requests, dependencies or uploads.
 
-**Proposed fixed service: $29 for one UTF-8 CSV, up to 50,000 data rows and 20 columns.** Customer-selected rules, retained duplicate rows, exception review, a change log and reconciled counts. Currently accepting **free feasibility requests only**; paid orders require an agreed payment route and terms. See [SERVICE.md](SERVICE.md) for scope and the public preview process. This is not evidence of sales.
+> **Now accepting requests for the US$29 paid pilot.** Start with a free feasibility preview; payment follows a specific order confirmation.
 
-[Request a free feasibility preview](https://github.com/rayer0/Codex/issues/new?template=csv-feasibility.md) · [See the sample result](sample-output/summary.json) · [Read validation results](QA.txt)
+**US$29 one-time service for one UTF-8 CSV with a header, up to 50,000 data records excluding the header and 20 columns.** Start with a free sample preview. This AI-operated pilot configures agreed rules and delivers retained duplicates, exception review, a cell change log and reconciled counts; no human analyst review is claimed. The original MIT tool remains free.
+
+A live payment link is supplied only for a specific order after the file, rules, expected example, delivery date and terms are agreed. There is no public buy-now checkout. The proposed terms include one in-scope correction requested within 7 calendar days of delivery; cancellation before delivery receives a full service-fee refund if paid, and an in-scope defect that remains after the included correction receives a full service-fee refund. Refund arrival times are not guaranteed. See [SERVICE.md](SERVICE.md) for the full workflow, acceptance checks and boundaries. No sales or revenue are claimed.
+
+[Request the US$29 pilot — start with a free preview](https://github.com/rayer0/Codex/issues/new?template=csv-feasibility.md) · [See the sample result](sample-output/summary.json) · [Read validation results](QA.txt)
 
 ## Run
 
@@ -55,4 +59,4 @@ Canonical CSVs retain formula-like content. Cells beginning with tab/newline/car
 
 ## Service boundary
 
-$29 covers one file with agreed explicit rules and an auditable result. No invented data, automatic conflict resolution, sensitive-domain conclusions or third-party enrichment. The pilot accepts only synthetic or shareable public examples; private production-data handling is not available. Never publish private/personal data in samples, repositories or public uploads. This project contains synthetic data only. The original tool is available under the [MIT license](LICENSE).
+US$29 is a one-time fee for configuration, validation and delivery of one file under agreed explicit rules. The free preview and the full service both accept only non-sensitive synthetic data or non-sensitive public data you are authorized to share. No private production-data handling, invented values, automatic conflict resolution, sensitive-domain conclusions or third-party enrichment. Never publish customer, private, personal, confidential, credential or payment data in issues, repositories or uploads. Delivery and any correction date are agreed per order; there is no fixed response SLA or unattended delivery promise. This project contains synthetic data only. The original tool is available under the [MIT license](LICENSE).

@@ -1,15 +1,22 @@
 ---
 name: CSV feasibility preview
-about: A free preview with invented rows or public data. Paid orders are not open.
+about: Free sample preview before a scoped US$29 one-time order. Payment follows order confirmation.
 title: "[Preview] "
 ---
 
-This issue is public. Use only invented rows or data you are authorized to publish. Never post customer data, private information, credentials or payment details.
+> **Now accepting requests for the US$29 paid pilot.** Start with a free feasibility preview; payment follows a specific order confirmation.
 
-This is an AI-operated pilot. The proposed fixed price is US$29 for one UTF-8 CSV of up to 50,000 data rows and 20 columns. Payment arrangements and order terms are not yet established. This request does not place an order. Do not send money.
+This issue is public. Use only non-sensitive invented rows or non-sensitive public data you are authorized to share. Never post customer, private, personal or confidential information, credentials or payment details. The same restriction applies to the complete file; private production-data handling is not available.
 
-- [ ] My example is safe to publish and contains no private or customer data.
-- [ ] I understand this is a free feasibility request, with no accepted order or promised delivery time.
+This is an AI-operated pilot; no human analyst review is claimed. The fixed service fee is **US$29 one time** for one UTF-8 CSV with a header, up to 50,000 data records excluding the header and 20 columns. The original MIT tool remains free. This request is a free preview, not an accepted order or a request for payment.
+
+After a successful preview, the file, rules, expected example, deliverables, acceptance checks, delivery date and terms must be confirmed for a specific order before a live payment link is supplied. There is no unrestricted public buy-now checkout and no fixed response SLA. Do not post payment details here.
+
+The proposed terms include one in-scope correction requested within 7 calendar days of delivery; a full service-fee refund if a paid order is cancelled before delivery, or if an in-scope defect remains after the included correction. Refund arrival times are not guaranteed. See [SERVICE.md](https://github.com/rayer0/Codex/blob/main/SERVICE.md) for complete scope, acceptance and terms. Terms are agreed in the order confirmation; this preview does not accept an order.
+
+- [ ] My example and intended complete file are safe to publish and contain no customer, private, personal or other sensitive data.
+- [ ] I understand this is a free feasibility request, with no accepted order, payment request or promised delivery time.
+- [ ] I understand the service is AI-operated and the original tool is free.
 
 ## Desired result
 
@@ -17,14 +24,15 @@ What should the cleaned CSV be ready for?
 
 ## File shape
 
-- Approximate number of data records:
+- Approximate number of data records, excluding the header:
 - Number of columns:
 - Column names:
 - Encoding and delimiter, if known:
+- Public dataset URL or description of how the data was synthesized:
 
 ## Small example
 
-Paste 8–20 invented rows with a header, or link a suitable public dataset. Do not attach a private original file.
+Paste 8–20 invented rows with a header, or link a suitable non-sensitive public dataset. Do not attach a private original file.
 
 ```csv
 record_id,category,value
@@ -41,4 +49,8 @@ The tool separates exact full-row duplicates after the specified normalization, 
 
 ## Exceptions
 
-Which values should be flagged and left unchanged? Include date formats, blank-value rules and any other constraints.
+Which values should be flagged and left unchanged? Include explicit date formats, blank-value rules and any other constraints.
+
+## Timing
+
+If relevant, state a desired completion date and time zone. This is a preference only; any delivery date must be agreed in the specific order confirmation.
